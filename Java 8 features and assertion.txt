@@ -1,0 +1,78 @@
+Predefined functional interfaces
+================================
+Predicate
+---------
+predicate is a Boolean valued function. 
+it takes one input and returns true or false.
+introduced in java8 inside java.util.functional package.
+Functional Interface : Predicate<T>.
+abstract method:boolean test(T t)
+used to perform conditional checks(like filters).
+
+Function
+--------
+function performs some operation and returns a result
+takes one input and returns one output.
+present in java.util.function package.
+function interface:<Function<T,R>>
+abstract method: apply();
+
+Consumer
+--------
+Consumer takes input but returns nothing(void)
+used when you want to perform an action(like printing and updating)
+present in java.util.function package.
+functional interface Consumer<T>.
+abstract method: accept(T t).
+
+Supplier
+--------
+supplier doesn't take any input but return an output.
+used when you need to supply data, like random numbers dates, otp's...etc.
+present in java.util.function package.
+Functional interface: Supplier<R>.
+abstract method: get();
+
+BiPredicate
+===========
+BiPredicate is just like predicate.
+but it takes two inputs instead of one.
+returns Boolean value.
+
+BiFunction
+==========
+BiFunction is similar to function.
+but it takes two inputs and returns one output.
+
+BiConsumer
+----------
+BiConsumer is like consumer
+but it takes two inputs and returns nothing.
+
+Assertions
+==========
+The most common way of debugging is uses of sop. but the main disadvantage of sop is after fixing the bug compulsory we should delete extra added soaps other wise these soaps also will be executed at runtime which impact performance of the system and disturbs logging mechanism.
+
+2. to overcome these problems sunpeople introduced assertion concept in java 1.4 version.
+
+3. the main advantage of assertion over sops is based on our requirement we can enable or disable assertion and by default ,assertion are disable hence after fixing the bug it is not required to delete assert statement explicitly.
+
+4. Hence the main Objective of assertion is to perform debugging.
+5. usually we can perform debugging either development department or testing department but not production environment hence assertion concept is applicable for development and test environments but not for production.
+
+Types of assertion statements.
+=============================
+There are 2 types of assertion statements.
+1. simple version
+2. argument version
+
+simple version
+--------------
+syntax: assertion(b); b should be Boolean type.
+
+if b is true our assumption is correct and continue rest of the program normally.
+if b is false our assumption fails and hence stop the execution by raising assertion error.
+
+syntax:
+-------
+assert(a):e;// argument version
