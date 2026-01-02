@@ -46,7 +46,7 @@ but it takes two inputs and returns one output.
 
 BiConsumer
 ----------
-BiConsumer is like consumer
+BiConsumer is like consumer.
 but it takes two inputs and returns nothing.
 
 Assertions
@@ -76,4 +76,5 @@ if b is false our assumption fails and hence stop the execution by raising asser
 syntax:
 -------
 assert(a):e;// argument version
+
 
