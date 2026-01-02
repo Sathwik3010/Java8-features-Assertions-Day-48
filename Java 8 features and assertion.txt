@@ -53,7 +53,7 @@ Assertions
 ==========
 The most common way of debugging is uses of sop. but the main disadvantage of sop is after fixing the bug compulsory we should delete extra added soaps other wise these soaps also will be executed at runtime which impact performance of the system and disturbs logging mechanism.
 
-2. to overcome these problems sunpeople introduced assertion concept in java 1.4 version.
+2. to overcome these problems sunmicrosystems introduced assertion concept in java 1.4 version.
 
 3. the main advantage of assertion over sops is based on our requirement we can enable or disable assertion and by default ,assertion are disable hence after fixing the bug it is not required to delete assert statement explicitly.
 
@@ -76,3 +76,4 @@ if b is false our assumption fails and hence stop the execution by raising asser
 syntax:
 -------
 assert(a):e;// argument version
+
